@@ -21,10 +21,10 @@
    </head>
 
   <body style="background-color:pink;">
-   
+
      <!--ヘッダー-->
      <script>
-      fetch(./kitsune-parts/header.html)
+      fetch("./kitsune-parts/header.html")
        .then(res=>res.text())//HTML を取り込む
        .then(html=>document.header.insertAdjacentHTML("beforeend",html))//head.html の中身を index.html の <head> に追加する
       </script>
