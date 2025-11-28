@@ -4,7 +4,15 @@
         <meta charset="UTF-8" />
         <title>はじめてのページ</title>
         
-        <div id="site-header"></div>
+        <!--作者プロフィール-->
+        <meta name="author" content="kitsune0606/きつねぴょん"> 
+        <meta name="discription" content="きつねぴょんのはじめてのウェブサイト、練習工事中🦊✨">
+        <!--アイコン-->
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon/kitssune32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon/kitssune192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/icon/kitssune512.png">
+
+
 
         <!--SNS のプレビュー-->
         <meta property="og:title" content="もふもふハウス🏠🦊🌸🐈‍⬛">
@@ -16,7 +24,8 @@
     </head>
 
     <body style="background-color:pink;">
-
+        <!--ヘッダー-->
+        <div id="header"></div>
         <!---->
         <nav>
             <strong>
@@ -96,7 +105,7 @@
         <p>もふもふせかい💖🦊🌸🐈‍⬛💕らぶらぶあにまる～</p>
         <script src="kitsune-parts-js/embeddedHTML.js"></script>
         <script>
-            embedded_html("/kitsune-parts/head.html", "site-header");
+            embedded_html("/kitsune-parts/header.html", "header");
         </script>
     </footer>
 </html>
