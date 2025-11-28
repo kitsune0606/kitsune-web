@@ -26,21 +26,11 @@
    <body style="background-color:pink;">
 
      <!--ヘッダー-->
-     <header id="header"><script>
-        embedded_html("/kitsune-web/kitsune-parts/header.html", "header");
-     </script></header>
+     <header id="header"></header>
      
-     
-     <nav>
-      <ul><strong>
-        <h3> <li><href="" title="まだにゃいゆ～">自己紹介</a></li></h3>
-        <h3> <li><href="" title="まだにゃいゆ～">うちの子</a></li></h3>
-           <ul>
-            <li><a href="./image/paffe.jpg" target="_blank" title="ぱふぇだよ～">ぱふぇちゃん🍨</a></li>
-            <li><a href="./image/milk.jpg"  target="_blank" title="みるくだよ～">みるくちゃん🥛</a></li>
-           </ul>
-         <h3><li><href="" title="まだにゃいゆ～">ただ今工事中だよ～🦊⛑️</a></li></h3>
-      </strong></ul>
+     <!--ページ-->>
+     <nav id="nav"></nav>
+       
      <main>
 
       <!--獨立章節-->
@@ -80,7 +70,10 @@
 
 
 
-   <footer>
-      <p>もふもふせかい💖🦊🌸🐈‍⬛💕らぶらぶあにまる～</p>
-   </footer>
+   <footer id="footer"></footer>
+   <script>
+     embedded_html("/kitsune-web/kitsune-parts/header.html", "header");
+     embedded_html("/kitsune-web/kitsune-parts/nav.html","nav");
+     embedded_html("/kitsune-web/kitsune-parts/footer.html","footer");
+   </script>
 </html>
