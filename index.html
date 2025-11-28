@@ -20,15 +20,13 @@
 
    </head>
 
-   <!--鑲入插件-->
-   <script src="./kitsune-parts-js/embeddedHTML.js"></script>
 
    <body style="background-color:pink;">
 
      <!--ヘッダー-->
      <header id="header"></header>
      
-     <!--ページ-->>
+     <!--ページ-->
      <nav id="nav"></nav>
        
      <main>
@@ -71,7 +69,9 @@
 
 
    <footer id="footer"></footer>
-   <script>
+
+   <!--鑲入插件-->
+   <script src="./kitsune-parts-js/embeddedHTML.js">
      embedded_html("/kitsune-web/kitsune-parts/header.html", "header");
      embedded_html("/kitsune-web/kitsune-parts/nav.html","nav");
      embedded_html("/kitsune-web/kitsune-parts/footer.html","footer");
