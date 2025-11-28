@@ -1,81 +1,102 @@
-<!doctype html>
-<html>
-   <head>
-      <meta charset="uft-8" />
-      <title>はじめてのページ</title>
-      <!--作者プロフィール-->
-      <meta name="author" content="kitsune0606/きつねぴょん"> 
-      <meta name="discription" content="きつねぴょんのはじめてのウェブサイト、練習工事中🦊✨">
-      <!--アイコン-->
-      <link rel="icon" type="image/png" sizes="32x32" href="./icon/kitssune32.png">
-      <link rel="icon" type="image/png" sizes="192x192" href="./icon/kitssune192.png">
-      <link rel="icon" type="image/png" sizes="512x512" href="./icon/kitssune512.png">
-      
-      <!--SNS のプレビュー-->
-      <meta property="og:title" content="もふもふハウス🏠🦊🌸🐈‍⬛">
-      <meta property="og:description" content="うちの子かわいい💖～もふもふ絵もアップロードの予定～にゅにゅよわよわすぎりゅ🪦">
-      <meta property="og:image" content="https://kitsune0606.github.io/kitsune-web/image/card.jpg">
-      <meta property="og:type" content="website">
-      <meta property="og:url" content="https://kitsune0606.github.io/kitsune-web/">
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>はじめてのページ</title>
+        
+        <div id="site-header"></div>
 
-   </head>
+        <!--SNS のプレビュー-->
+        <meta property="og:title" content="もふもふハウス🏠🦊🌸🐈‍⬛">
+        <meta property="og:description" content="うちの子かわいい💖～もふもふ絵もアップロードの予定～にゅにゅよわよわすぎりゅ🪦">
+        <meta property="og:image" content="https://kitsune0606.github.io/kitsune-web/image/card.jpg">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://kitsune0606.github.io/kitsune-web/">
 
-  <body style="background-color:pink;">
+    </head>
 
-     <!--ヘッダー-->
-     <header id="site-header">
-      <script> fetch("./kitsune-parts/header.html")
-         .then(res=>res.text())//HTML を取り込む
-         .then(html=>document.getElementById("site-header").insertAdjacentHTML("beforeend",html))</script>
-     </header>
-     
-     <!---->
-     <nav>
-      <ul><strong>
-        <h3> <li><href="" title="まだにゃいゆ～">自己紹介</a></li></h3>
-        <h3> <li><href="" title="まだにゃいゆ～">うちの子</a></li></h3>
-           <ul>
-            <li><a href="./image/paffe.jpg" target="_blank" title="ぱふぇだよ～">ぱふぇちゃん🍨</a></li>
-            <li><a href="./image/milk.jpg"  target="_blank" title="みるくだよ～">みるくちゃん🥛</a></li>
-           </ul>
-         <h3><li><href="" title="まだにゃいゆ～">ただ今工事中だよ～🦊⛑️</a></li></h3>
-      </strong></ul>
-     <main>
+    <body style="background-color:pink;">
 
-      <!--獨立章節-->
-      <section>
-      <h2>自己紹介</h2>
-         <p>やせいのにゅにゅだよ～<br>
-         にほんごといろいろもの勉強しますにゅ～<br>
-         よろよろにゅにゅ～🦊</p>
-         </section>
-      
-      <section>   
-      <h2>うちの子</h2>
-         <p>
-         <a href="./image/paffe.jpg" 
-            title="🍨" target="_blank"><strong>ぱふぇちゃん</strong></a>
-         と
-         <a href="./image/milk.jpg"
-            title="🥛" target="_blank"><strong>みるくちゃん</strong></a>
-         を先頭に<br>
-         うちの子たちの世界にゅ♪</p>
-         </section>
-      
-      <section>
-      <h2>ただ今工事中だよ～🦊⛑️</h2>
-         <img
-          src="./image/nyu.jpg" alt="にゅ～💧 " style="width: 100%; height: auto;">
-          </section>
+        <!---->
+        <nav>
+            <strong>
+                <ul>
+                    <li>
+                        <h3>
+                            <a href="" title="まだにゃいゆ～">自己紹介</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="" title="まだにゃいゆ～">うちの子</a>
+                        </h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/image/paffe.jpg" target="_blank" title="ぱふぇだよ～">ぱふぇちゃん🍨</a>
+                    </li>
+                    <li>
+                        <a href="/image/milk.jpg"  target="_blank" title="みるくだよ～">みるくちゃん🥛</a>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="" title="まだにゃいゆ～">ただ今工事中だよ～🦊⛑️</a>
+                        </h3>
+                    </li>
+                </ul>
+            </strong>
+        </nav>
+        <main>
+            <!--獨立章節-->
+            <section>
+                <h2>自己紹介</h2>
+                <p>
+                    やせいのにゅにゅだよ～<br>
+                    にほんごといろいろもの勉強しますにゅ～<br>
+                    よろよろにゅにゅ～🦊
+                </p>
+            </section>
+         
+            <section>   
+                <h2>うちの子</h2>
+                <p>
+                    <a 
+                        href="/image/paffe.jpg" 
+                        title="🍨" 
+                        target="_blank"
+                    >
+                        <strong>ぱふぇちゃん</strong>
+                    </a>
+                    と
+                    <a 
+                        href="/image/milk.jpg"
+                        title="🥛" 
+                        target="_blank"
+                    >
+                        <strong>みるくちゃん</strong>
+                    </a>
+                    を先頭に<br>
+                    うちの子たちの世界にゅ♪
+                </p>
+            </section>
+         
+            <section>
+                <h2>ただ今工事中だよ～🦊⛑️</h2>
+                <img
+                    src="/image/nyu.jpg" 
+                    alt="にゅ～💧 " 
+                    style="width: 100%; height: auto;"
+                >
+           </section>
+        </main>
+    </body>
 
-     </main>
-
-   </body>
- 
-
-
-
-   <footer>
-      <p>もふもふせかい💖🦊🌸🐈‍⬛💕らぶらぶあにまる～</p>
-   </footer>
+    <footer>
+        <p>もふもふせかい💖🦊🌸🐈‍⬛💕らぶらぶあにまる～</p>
+        <script src="kitsune-parts-js/embeddedHTML.js"></script>
+        <script>
+            embedded_html("/kitsune-parts/head.html", "site-header");
+        </script>
+    </footer>
 </html>
